@@ -1,15 +1,137 @@
 <!DOCTYPE html>
 <html>
-<frameset rows="30px,*">
-    <center>
-    <!-- Top frame (menu) -->
-    <frame src="menu.html" name="topFrame" scrolling="no">
+<head>
+  <title>Login</title>
 
-    <!-- Content frame (changes automatically) -->
-    <frame src="home_page.html" name="contentFrame">
-    </center>
-</frameset>
-<p>hello there this is starting phase of wwebsite please dont frustate
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
 
-</p>
+    body {
+      font-family: Arial, sans-serif;
+      color: white;
+      background-color: #000;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Subtle gold background image */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("https://img.freepik.com/premium-photo/golden-watch-black-background_221128-17721.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 0.12;
+      z-index: -1;
+    }
+
+    table {
+      width: 100%;
+      height: 100%;
+      border-collapse: collapse;
+    }
+
+    td {
+      width: 50%;
+      height: 100%;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* Right side center content */
+    .right-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .title {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: gold;
+    }
+
+    form {
+      background: rgba(0, 0, 0, 0.75);
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+      text-align: center;
+    }
+
+    label {
+      color: white;
+      font-weight: bold;
+    }
+
+    input {
+      width: 220px;
+      padding: 8px;
+      margin-top: 6px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    input[type="submit"] {
+      margin-top: 15px;
+      padding: 8px 25px;
+      background-color: #d4af37;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: gold;
+    }
+  </style>
+</head>
+
+<body>
+
+<table border="0" width="100%">
+  <tr>
+
+    <!-- LEFT SIDE : FULL VIDEO -->
+    <td border="0" width="100%" valign="top">
+      <iframe src="image.html" scrolling="no"></iframe>
+    </td>
+
+    <!-- RIGHT SIDE : NAME + LOGIN -->
+    <td>
+      <div class="right-content">
+        <form action="registration.html" method="get">
+          <label>User ID</label><br>
+          <input type="email" required><br><br>
+
+          <label>Password</label><br>
+          <input type="password" required><br><br>
+
+          <input type="submit" value="Login">
+        </form>
+
+      </div>
+    </td>
+
+  </tr>
+</table>
+
+</body>
 </html>

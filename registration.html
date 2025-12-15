@@ -1,11 +1,97 @@
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        color: white;
+        background-color: #000;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* Soft golden layered background */
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:
+            linear-gradient(135deg, rgba(212,175,55,0.15), rgba(0,0,0,0.9)),
+            radial-gradient(circle at top right, rgba(255,215,0,0.2), transparent 60%),
+            radial-gradient(circle at bottom left, rgba(255,215,0,0.15), transparent 65%);
+        z-index: -1;
+    }
+
+    form {
+        background: rgba(0, 0, 0, 0.75);
+        padding: 35px 45px;
+        border-radius: 12px;
+        box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+        width: 350px;
+    }
+
+    h1 {
+        color: gold;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    hr {
+        border: 0;
+        height: 1px;
+        background: gold;
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+        color: white;
+    }
+
+    input[type="text"],
+    input[type="date"] {
+        width: 100%;
+        padding: 8px;
+        margin: 6px 0 12px 0;
+        border-radius: 5px;
+        border: none;
+    }
+
+    input[type="radio"] {
+        margin-right: 6px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background: linear-gradient(135deg, gold, #d4af37);
+        border: none;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+        color: black;
+    }
+
+    input[type="submit"]:hover {
+        background: linear-gradient(135deg, #fff2a8, gold);
+    }
+</style>
 <body>
 <center>
 <h1><em> REGISTRATION PAGE</em></h1>
 <hr width="50%">
 </center>
-<form action="index.html" method="get">
+<form action="main.html" method="get">
 <label for="fname">first_name</label><br>
-<input type="text" id="fname" name="first_name"><br>
+<input type="text" id="fname" name="first_name" placeholder="rishi"><br>
 <label for="lname">last_name</label><br>
 <input type="text" id="lname" name="last_name"><br>
 <label for="gender">gender</label><br>

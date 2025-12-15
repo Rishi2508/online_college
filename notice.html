@@ -1,5 +1,99 @@
 <!DOCTYPE html>
 <html>
+   <style>
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        color: white;
+
+        background-color: #000;
+        position: relative;
+
+        /* IMPORTANT FIX */
+        min-height: 100vh;
+        overflow-y: auto;
+
+        display: block;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* Background image layer */
+    body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+
+        background:
+            linear-gradient(135deg, rgba(212,175,55,0.15), rgba(0,0,0,0.85)),
+            url("https://img.freepik.com/premium-photo/golden-watch-black-background_221128-17721.jpg");
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        opacity: 0.18;
+        z-index: -1;
+    }
+
+    h2 {
+        margin-bottom: 10px;
+        color: gold;
+        letter-spacing: 1px;
+    }
+
+    h3 {
+        margin-top: 30px;
+        color: #ffd700;
+    }
+
+    table {
+        width: 95%;
+        margin: auto;
+        border-collapse: collapse;
+        background: rgba(0,0,0,0.7);
+    }
+
+    th {
+        color: black;
+        background: rgba(255,215,0,0.15);
+        padding: 10px;
+    }
+
+    td {
+        padding: 10px;
+    }
+
+    a {
+        color: #ffd700;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        margin: 8px 0;
+    }
+
+    img {
+        margin: 10px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(255,215,0,0.5);
+    }
+</style>
+
 <body>
 
 <center>
@@ -44,7 +138,7 @@
 
 <h3><b>Important Links</b></h3>
 <ul>
-    <li><a href="timetable.pdf" target="_blank">Download Timetable</a></li>
+    <li><a href="timetable.jpeg" target="_blank">Download Timetable</a></li>
     <li><a href="exam_schedule.pdf" target="_blank">Exam Schedule</a></li>
     <li><a href="lab_list.pdf" target="_blank">Lab Experiments List</a></li>
 </ul>

@@ -1,25 +1,67 @@
 <body>
-<!-- <button>home page</button>
-<button>about me</button>
-<button>acadamics</button>
-<a href="interaction.html"><button>interaction</button></a>
-<button>notice board</button>
-<label for="courses" id="feedback"></label> -->
-
-
+    <link rel="stylesheet" href="css/main.css">
 <h2>Select a File</h2>
 <form action="wad.pdf">
     
-    <input type="submit" value="Open a">
+    <input type="submit" value="web applications textbook">
 </form>
 
 <form action="cd.pdf">
-    <input type="submit" value="Open B">
+    <input type="submit" value="compiler design textbook">
 </form>
 
 <form action="dl.pdf">
-    <input type="submit" value="Open C">
+    <input type="submit" value="deeplearning textbook">
 </form>
+<!-- AI Help Floating Button -->
+<div id="ai-button">AI</div>
 
-</form>
+<!-- AI Chat Window -->
+<div id="ai-chat">
+    <div id="ai-header">
+         Ask AI
+        <span id="ai-close">✖</span>
+    </div>
+
+    <div id="ai-body">
+        <p style="color:#aaa;">Ask your question...</p>
+    </div>
+
+    <div id="ai-input">
+        <input type="text" id="ai-text" placeholder="Type your question..." />
+        <button onclick="sendAI()">Send</button>
+    </div>
+</div>
+<h5>contact experts from our website</h5>
+<h6>professor karivepak frcs,bed,mtech,mphil,TFI<a href="tel:9672351052">9672351052</a></h6>
+    <h6>professor palli_chetney nuts,water,salt,tamrind,chenna dal<a href="tel:9398350724">9398350724</a></h6>
+        <h6>professor meher noolan billa,kantri,bhola,etc<a href="tel:000000000000">0000000000</h6>
+<!-- <script>
+const aiBtn = document.getElementById("ai-button");
+const aiChat = document.getElementById("ai-chat");
+const aiClose = document.getElementById("ai-close");
+
+aiBtn.onclick = () => {
+    aiChat.style.display = "flex";
+};
+
+aiClose.onclick = () => {
+    aiChat.style.display = "none";
+};
+
+function sendAI() {
+    const input = document.getElementById("ai-text");
+    const body = document.getElementById("ai-body");
+
+    if (input.value.trim() === "") return;
+
+    body.innerHTML += `<p><b>You:</b> ${input.value}</p>`;
+    body.innerHTML += `<p style="color:gold;"><b>AI:</b> API response here</p>`;
+
+    input.value = "";
+    body.scrollTop = body.scrollHeight;
+} -->
+</script>
+
+
 </body>
